@@ -1,0 +1,206 @@
+/* 
+Theme Name: Hudson
+Description: Hudson is a responsive 3 column grid based theme. It's suitable for blogs or business websites looking for a clean and modern layout.
+Author: Michael Burrows  
+Author URI: http://www.wpmultiverse.com/
+Theme URI: http://www.wpmultiverse.com/themes/hudson/
+Tags: gray, white, light, three-columns, responsive-layout, custom-menu, editor-style, featured-images, sticky-post   
+Version: 2.0.1
+License: GNU General Public License v3.0
+License URI: http://www.gnu.org/licenses/gpl-3.0.html 
+Hudson WordPress Theme, Copyright 2014 wpmultiverse.com
+Hudson WordPress Theme is distributed under the terms of the GNU GPL
+Text Domain: hudson
+*/ 
+
+body {background-color:#f0f3f4; font-family:'Roboto Slab',serif; font-weight:300;}
+a {color:#20b2aa;}
+a:hover {color:#20b2aa!important;}
+h1,h2,h3,h4,h5,h6 {font-weight:700;}
+
+/* ----- header ----- */
+#header-holder {background-color:#e3e6e8; margin-bottom:15px; border-bottom:1px solid #e1e2e3;}
+header {padding:5px 0;}
+header .menu {margin:1px 0 6px 0; padding:5px 0 0 15px;}
+header .menu li {display:inline; text-transform:uppercase; font-size:12px; line-height:12px; margin-right:15px;}
+header .menu li a {color:#666e75;}
+header .social {text-align:right;}
+header .social a:hover i {color:#20b2aa;}
+
+/* ----- footer ----- */
+#footer-holder {background-color:#e3e6e8; margin-top:60px;}
+footer {font-size:12px;}
+footer .menu {padding:0}
+footer .menu li {display:inline; text-transform:uppercase; font-size:12px; margin-right:10px;}
+footer .menu li a, #copyright {color:#666e75;}
+#footer-widgets {margin-top:30px; margin-bottom:-60px; background-color:#fff; border-top:1px solid #e1e2e3;}
+#footer-widgets .widget {margin-top:0; margin-bottom:30px;}
+#footer-widgets .row {overflow: hidden;}
+#footer-widgets .col {width:22%; border-left:1px solid #e1e2e3; padding:30px 30px 9999px 30px; margin-bottom: -9999px; *margin-bottom: -9999px;}
+#copyright {float:left; margin-right:30px;}
+#theme {float:right;}
+#theme a {color:#666e75;}
+#theme .glyphicon {color:#999;}
+#credit {color:#666e75; margin-right:8px;}
+
+/* ----- sidebar / left ----- */
+#logo {color:#20b2aa; padding-top:10px; margin:15px 0; display:inline-block; font-size:24px; font-family:'Roboto Slab', serif; font-weight:700;}
+#logo-img {margin:20px 0 5px 0; display:block; width:100%;}
+#logo-img img {margin:auto;}
+#primary-menu ul {margin:15px 0 0 -15px; padding:0; border-top:1px solid #333; border-bottom:1px solid #333; padding:5px 0;}
+#primary-menu li {list-style:none; display:block;}
+#primary-menu li a {color:#ccc; font-weight:500; display:block; padding:10px 0 11px 15px;}
+#primary-menu li:hover, #primary-menu .current-menu-item, #primary-menu .nav-clicked {background-color:#383838; color:#fff;}
+#primary-menu li:hover span, #primary-menu li:hover a {color:#fff;}
+#primary-menu .current-menu-item {border-bottom:1px solid #2b2b2b; border-top:1px solid #2b2b2b;}
+#primary-menu span {float:right; color:#555; margin-right:15px; position:relative; top:3px; font-size:16px;} 
+#primary-menu .nav-clicked span {color:#fff;}
+#primary-menu .nav-clicked a {color:#fff;}
+#primary-menu .sub-menu {margin:0!important; display:none; padding:0; border:0;}
+#primary-menu .sub-menu .glyphicon {display:none;}
+#primary-menu .sub-menu li {background-color:#1b1b1b; font-size:13px;}
+#primary-menu .sub-menu li a {color:#fff;}
+#primary-menu .sub-menu li a:hover {color:#20b2aa;}
+#sidebar {height:100%; background-color:#2b2b2b; position:fixed; padding-bottom:30px;}
+#sidebar .widget {color:#ccc; font-size:13px;}
+#sidebar .widget h4 {color:#fff;}
+#sidebar .widget a {color:#ccc;}
+#sidebar .widget_tag_cloud a {background-color:#383838;}
+#sidebar .widget_search input[type="text"] {width:72%;}
+#sidebar #searchsubmit {background-color:#1b1b1b; border-bottom-color: #383838;}
+.navbar-toggle {border-color:#555; position:absolute; top:10px; right:10px; float:right;}
+.navbar-toggle span {background-color:#555;}
+.navbar-collapse {padding:0; max-height:none; border:0; box-shadow:none;}
+
+/* ----- sidebar / right ----- */
+#sidebar-right {color:#666; padding-left:0;}
+#sidebar-right .widget {padding:30px 15px; border-bottom:1px solid #e1e2e3; margin:0;}
+#sidebar-right .widget_text {padding-bottom:20px;}
+#sidebar-right .zebra {background-color:#ebeff0;}
+
+/* ----- widgets ----- */
+.widget {margin-top:30px; line-height:1.6em;}
+.widget h4 {margin:0 0 15px 0; font-weight:400;}
+.widget ul {margin:0 0 0 16px; padding:0;}
+.widget ul li {margin-bottom:4px;}
+.widget img {display:inline-block; height:auto; max-width:100%;}
+.widget select {border:1px solid #e1e2e3; margin-right:5px; padding:10px; width:100%; color:#666; margin-bottom:10px;}
+.widget_search label {display:none;}
+.widget_search input[type="text"] {margin-bottom:0; width:60%;}
+.widget_tag_cloud a {font-size:12px!important; background-color:#e3e6e8; color:#777; margin:0 6px 8px 0; padding:3px 8px; display:inline-block;}
+.widget_calendar table {width:100%;}
+.widget_calendar table caption {margin-bottom:10px;}
+.widget_calendar table td {text-align:center;}
+.widget_calendar table tbody {margin-bottom:10px;}
+.widget_calendar table #prev, .widget_calendar table #next {font-size:12px; margin-top:10px;}
+
+/* ----- posts & pages ----- */
+.article-content {padding:10px 30px 15px 30px;}
+.post-title a, #post-title {color:#333; font-size:32px; font-weight:300;}
+.post-date-author {font-size:14px; color:#777;}
+.post-date-author span {color:#ccc; font-size:15px; margin-right:8px;}
+.post-date-author .glyphicon-user {margin-left:8px;}
+article {font-size:16px; border-bottom:1px solid #e1e2e3; background-color:#fff; margin-bottom:30px; line-height:1.8em;}
+article p {margin-bottom:30px;}
+article img {display:inline-block; height:auto; max-width:100%;}
+article h1 {font-size:32px;}
+article h2 {font-size:29px;}
+article h3 {font-size:26px;}
+article h4 {font-size:23px;}
+article h5 {font-size:20px;}
+article h6 {font-size:16px;}
+article .wp-caption, article .gallery-caption {max-width:97%; font-size:14px;}
+article ul {margin:0 0 30px 0; padding-left:16px;}
+article ol {margin:0 0 30px 0; padding-left:22px;}
+article blockquote {border-top:4px solid #e1e2e3; border-bottom:1px solid #e1e2e3; margin-top:30px; margin-bottom:30px;}
+article blockquote p {font-size:20px;}
+article blockquote cite {font-size:14px; width:100%; display:block; margin-top:15px;}
+article table {width:100%;}
+article table td, article table th {border:1px solid #e1e2e3; padding:8px;}
+article table th {background-color:#f7f7f7; font-weight:400;}
+article dt {font-weight:400;}
+article dd {margin:0 0 15px 0;}
+article embed {max-width:100%;}
+.format-aside .post-title, .format-aside .post-title a, .format-aside #post-title {font-size:22px; margin-bottom:0;}
+.format-aside .attachment-aside {float:left; margin:0 30px 0 -15px;}
+.format-aside p {font-size:15px;}
+.aligncenter {text-align:center;}
+.alignleft {float:left; margin-right:15px;}
+.alignright {float:right; margin-left:15px;}
+.wp-caption, .gallery-caption {max-width:97%; font-size:13px;}
+.wp-caption-text {margin-top:4px;}
+.post-tags a {font-size:13px; margin-right:12px; color:#666; float:left;}
+.post-meta {padding:15px 30px; background-color:#f7f7f7;}
+.post-meta p {display:inline; margin-right:15px; color:#999; font-size:12px;}
+.post-meta span {margin-right:5px; color:#ccc;}
+.sticky .glyphicon-star, p.sticky-txt {color:#2b2b2b;}
+.page-links {margin:0 0 30px 15px;}
+.page-links .current {padding:5px 12px; background-color:#e3e6e8; color:#666e75;}
+.page-links .page-numbers {margin-right:12px;}
+#post-nav {width:100%; float:left; margin-bottom:30px;}
+#post-nav a {color:#555;}
+#post-nav span {color:#ccc; font-size:12px;}
+#post-nav-prev {float:left; width:50%; padding-left:30px;}
+#post-nav-prev span {margin-right:8px;}
+#post-nav-next {float:right; width:50%; text-align:right; padding-right:30px;}
+#post-nav-next span {margin-left:8px;}
+
+/* ----- comments ----- */
+#comments {padding:0 30px;}
+#comments-title {font-size:22px; margin-bottom:15px;}
+.comment-list {padding:0;}
+.comment-list li {margin-bottom:30px; list-style:none;}
+.comment-list .bypostauthor .comment-author-name {font-weight:bold;}
+.comment-list .bypostauthor .comment-author-name a {font-weight:300;}
+.comment-list .thread-even {padding:15px; background-color:#ebeff0; border-bottom:1px solid #e1e2e3; margin-left:-15px;}
+.comment-list .children {padding:0;}
+.comment-list .children li {margin-bottom:0;}
+.comment .avatar {float:left; margin-right:10px;}
+.comment .comment-author-name {font-size:13px;}
+.comment .comment-body p {line-height:1.6em;}
+#commentform label {display:none;}
+.form-allowed-tags {display:none;}
+
+/* ----- form elements ----- */
+input[type=text], input[type=email], input[type=password], input[type=search], textarea {border:1px solid #e1e2e3; margin-right:5px; padding:10px; width:90%; color:#666; margin-bottom:10px;}
+input[type=submit], input[type=reset] {background-color:#f9f9f9; border:0; border-bottom:3px solid #e1e2e3; color:#999; padding:10px 12px; text-align:center;}
+input[type=submit]:hover, input[type=reset]:hover {background-color:#e1e2e3;}
+.screen-reader-text {display:none;}
+
+/* -- xs -- */
+@media (max-width:767px) {
+	header .menu {padding-left:0;}	
+	header .social {text-align:left;}	
+	#logo {margin:0 30px 0 0;}
+	#sidebar {height:auto; position:relative; padding-bottom:30px;}	
+	#logo-img {margin:0; padding-top:20px;}		
+	#sidebar #primary-menu ul {margin:25px 0 0 0;}	
+	.col-content {max-width:100%;}
+	footer .menu {float:left;}
+	#footer-widgets {margin-top:0;}
+	#footer-widgets .col {width:100%;}
+}
+/* -- sm -- */
+@media (min-width:768px) and (max-width:991px) {
+	#header-holder {float:left; width:100%;}		
+	#sidebar {height:auto; position:relative;}
+	#logo-img {margin-bottom:30px;}	
+	#primary-menu ul {margin:0; float:left; width:100%; padding:15px 0;}
+	#primary-menu li {float:left; margin-right:20px; font-size:16px;}
+	#primary-menu li:hover {background-color:transparent;}
+	#primary-menu li a {padding:0;}
+	#primary-menu li span {display:none;}
+	#primary-menu .current-menu-item {background-color:transparent;}
+	.navbar-collapse {margin-bottom:30px;}
+	.col-content {max-width:100%;}
+	#footer-widgets {margin-top:0;}
+	#footer-widgets .col {width:100%;}
+}
+/* -- md -- */
+@media (min-width:992px) and (max-width:1199px) {
+	#sidebar-right {padding-left:15px;}
+}
+/* -- lg -- */
+@media (min-width:1200px) {	
+	.col-content {max-width:800px;}		
+}
